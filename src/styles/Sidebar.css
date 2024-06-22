@@ -1,0 +1,34 @@
+
+.sidebar {
+  width: 270px;
+  background-color: #0E0E0E;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.menu, .general {
+  margin-bottom: 20px;
+}
+
+.menu h2, .general h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+li:hover {
+  color: #f00;
+}

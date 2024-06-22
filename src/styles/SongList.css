@@ -1,0 +1,39 @@
+
+.song-list {
+  flex: 1 1;
+  overflow-y: auto;
+  background-color: transparent;
+  /* overflow: hidden; */
+}
+
+.song-list-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: transparent;
+  color: rgba(207, 197, 197, 1);
+  font-size: 15px;
+  /* font-weight: bold; */
+  width: 85%;
+  margin: auto;
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  margin-bottom: 2px;
+}
+
+.song-item:hover {
+  background-color: #555;
+}
+
+.song-item.active {
+  background-color: #620000;
+  border-left: 6px solid;
+  border-color: red;
+}
