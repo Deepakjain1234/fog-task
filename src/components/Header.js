@@ -2,7 +2,7 @@
 import React from "react";
 import "../styles/Header.css";
 import image1 from "../asset/image/Michael.png";
-import verified from "../asset/logo/verified.png";
+// import verified from "../asset/logo/verified.png";
 import search from "../asset/logo/search.png"
 
 const Header = ({ song }) => {

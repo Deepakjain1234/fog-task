@@ -11,12 +11,12 @@ import {
 import {
   arrayMove,
   SortableContext,
-  sortableKeyboardCoordinates,
   useSortable,
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import '../styles/SongList.css';
+import playing from '../asset/logo/Playing.png'
 
 const SortableItem = ({ song, index, onSongClick, currentSong }) => {
   const {
@@ -44,7 +44,10 @@ const SortableItem = ({ song, index, onSongClick, currentSong }) => {
       onClick={() => onSongClick(song)}
     >
       <div style={{width:'85%',display:'flex',alignItems:'center',justifyContent:'space-between',margin:'auto' ,fontSize:13,}}>
-      <span style={{width:'5%'}}>{index + 1}</span>
+      { currentSong && currentSong.id === song.id?
+        <img src={playing} alt="" style={{height: 25,marginRight: 21,marginLeft: -13}} /> :
+        <span style={{width:'5%'}}>{index + 1}</span>
+      }
       <img src={song.image} style={{height:40,width:40 ,marginRight:23}} alt="" />
       <span style={{width:'25%'}}>{song.title}</span>
       <span style={{width:'15%'}}>{song.plays}</span>
